@@ -1,7 +1,7 @@
 import numpy as np
 nax = np.newaxis
 import scipy.special
-import scipy.weave
+import weave
 import time
 import traceback
 
@@ -294,7 +294,7 @@ def gauss_loglik_vec_C(x, mu, ssq):
     """
     for i in range(5):
         try:
-            ans = scipy.weave.inline(code, ['x', 'mu', 'ssq', 'logpi', 'dim'], type_converters=scipy.weave.converters.blitz)
+            ans = weave.inline(code, ['x', 'mu', 'ssq', 'logpi', 'dim'], type_converters=weave.converters.blitz)
             return ans
         except:
             traceback.print_exc()
@@ -319,7 +319,7 @@ def gauss_loglik_vec_C2(x, mu, ssq):
     """
     for i in range(5):
         try:
-            ans = scipy.weave.inline(code, ['x', 'mu', 'ssq', 'logpi', 'dim'], type_converters=scipy.weave.converters.blitz)
+            ans = weave.inline(code, ['x', 'mu', 'ssq', 'logpi', 'dim'], type_converters=weave.converters.blitz)
             return ans
         except:
             traceback.print_exc()
