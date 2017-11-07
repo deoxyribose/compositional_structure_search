@@ -176,7 +176,8 @@ class IBPCache:
         self.rows_included[i] = True
         self.num_included += 1
         self.Z[i, :] = z
-        self.counts += z
+        #self.counts += z
+        self.counts += z.astype(np.int64)
 
         #x, obs = self.data.X[i, :], self.data.obs[i, :]
         a = 1. / self.sigma_sq_n

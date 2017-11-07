@@ -1,0 +1,226 @@
+Here are the best-performing structures in each level of the search:
+
+     level                structure   row impvt.   col impvt.   z (row)   z (col)
+
+         1                   bg + g         7.41         3.53      8.43      7.14
+         2           b(gm' + g) + g        -0.85         0.19     -2.98      0.92
+
+
+Total CPU time was 53.1 seconds. Here is the breakdown:
+
+                     structure   level        time
+
+                     bs(g) + g       2        4  x  4.6 seconds
+                       gb' + g       1        4  x  2.1 seconds
+                b(gb' + g) + g       2        4  x  1.8 seconds
+                        bg + g       1        4  x  1.5 seconds
+                b(gm' + g) + g       2        4  x  0.6 seconds
+                 b(bg + g) + g       2        4  x  0.5 seconds
+                 b(gg + g) + g       2        4  x  0.4 seconds
+                 b(mg + g) + g       2        4  x  0.3 seconds
+                       gm' + g       1        4  x  0.3 seconds
+                 b(cg + g) + g       2        4  x  0.3 seconds
+                b(gc' + g) + g       2        4  x  0.3 seconds
+                        gg + g       1        4  x  0.3 seconds
+                        mg + g       1        4  x  0.2 seconds
+                        cg + g       1        4  x  0.1 seconds
+                       gc' + g       1        4  x  0.1 seconds
+
+
+The following are the top-scoring structures for level 1:
+
+                     structure       row       col        total   row impvt.   col impvt.   z (row)   z (col)
+
+                        bg + g    -55.22    -33.32     -5592.88         7.41         3.53      8.43      7.14
+                        mg + g    -55.25    -34.04     -5655.76         7.38         2.80      8.56      6.44
+                        gg + g    -56.45    -33.69     -5685.93         6.18         3.15      9.04      6.30
+                       gm' + g    -58.23    -34.14     -5813.53         4.40         2.70      5.99      4.98
+                       gb' + g    -59.41    -33.90     -5852.22         3.22         2.94      4.24      5.13
+                        cg + g    -61.59    -37.96     -6305.84         1.04        -1.12      1.74     -3.19
+                       gc' + g    -67.02    -38.75     -6644.38        -4.39        -1.91    -85.67     -8.64
+
+
+The following are the top-scoring structures for level 2:
+
+                     structure       row       col        total   row impvt.   col impvt.   z (row)   z (col)
+
+                b(gm' + g) + g    -56.07    -33.12     -5618.77        -0.85         0.19     -2.98      0.92
+                 b(bg + g) + g    -55.47    -33.49     -5620.57        -0.25        -0.18     -0.99     -0.87
+                 b(gg + g) + g    -55.77    -33.38     -5625.79        -0.55        -0.06     -2.13     -0.33
+                b(gb' + g) + g    -55.87    -33.57     -5646.57        -0.65        -0.25     -2.16     -1.23
+                 b(cg + g) + g    -55.79    -34.17     -5693.54        -0.57        -0.85     -2.25     -4.05
+                b(gc' + g) + g    -56.36    -34.44     -5744.96        -1.14        -1.12     -3.89     -4.64
+                 b(mg + g) + g    -56.70    -34.25     -5746.34        -1.48        -0.94     -4.63     -4.59
+                     bs(g) + g    -57.62    -34.65     -5826.52        -2.40        -1.34     -6.45     -4.38
+
+
+For structure bg + g, the following row components were found:
+
+    Component 1:
+
+        antelope
+        grizzly bear
+        beaver
+        dalmatian
+        persian cat
+        horse
+        german shepherd
+        siamese cat
+        skunk
+        mole
+        tiger
+        leopard
+        moose
+        spider monkey
+        gorilla
+        ox
+        fox
+        sheep
+        seal
+        chimpanzee
+        hamster
+        squirrel
+        rabbit
+        giraffe
+        wolf
+        chihuahua
+        rat
+        weasel
+        otter
+        buffalo
+        zebra
+        giant panda
+        deer
+        bobcat
+        pig
+        lion
+        mouse
+        polar bear
+        collie
+        raccoon
+        cow
+        dolphin
+
+    Component 2:
+
+        grizzly bear
+        killer whale
+        german shepherd
+        siamese cat
+        tiger
+        leopard
+        fox
+        bat
+        wolf
+        rat
+        weasel
+        bobcat
+        lion
+        polar bear
+        raccoon
+
+    Component 3:
+
+        antelope
+        horse
+        hippopotamus
+        moose
+        elephant
+        ox
+        sheep
+        rhinoceros
+        giraffe
+        buffalo
+        zebra
+        deer
+        pig
+        cow
+
+    Component 4:
+
+        beaver
+        siamese cat
+        skunk
+        mole
+        fox
+        hamster
+        squirrel
+        rabbit
+        bat
+        rat
+        weasel
+        otter
+        mouse
+        raccoon
+
+    Component 5:
+
+        skunk
+        mole
+        ox
+        sheep
+        hamster
+        rhinoceros
+        rabbit
+        rat
+        giant panda
+        pig
+        mouse
+        cow
+
+    Component 6:
+
+        killer whale
+        blue whale
+        humpback whale
+        seal
+        otter
+        pig
+        walrus
+        dolphin
+
+    Component 7:
+
+        beaver
+        blue whale
+        hippopotamus
+        humpback whale
+        elephant
+        rhinoceros
+        walrus
+
+    Component 8:
+
+        grizzly bear
+        persian cat
+        moose
+        buffalo
+        polar bear
+
+    Component 9:
+
+        dalmatian
+        persian cat
+        siamese cat
+        chihuahua
+        collie
+
+    Component 10:
+
+        spider monkey
+        gorilla
+        chimpanzee
+        bat
+
+    Component 11:
+
+        squirrel
+        giant panda
+        polar bear
+        raccoon
+
+    Component 12:
+
+        lion
+
+

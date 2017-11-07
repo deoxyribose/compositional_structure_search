@@ -37,7 +37,7 @@ def fit_model(data_matrix, K, num_iter=NUM_ITER, rotation_trick=True):
 
     t0 = time.time()
     for it in range(num_iter):
-        if np.any(-data_matrix.observations.mask):
+        if np.any(~data_matrix.observations.mask):
             obs = data_matrix.observations.mask
             U_var = np.outer(np.ones(N), ssq_U)
             V_var = np.outer(ssq_V, np.ones(D))

@@ -310,7 +310,7 @@ class AISModel:
         N, D = self.X.shape
         is_gsm = np.array([isinstance(s, GSMSampler) for s in self.samplers])
         gsm_idxs = np.where(is_gsm)[0]
-        non_gsm_idxs = np.where(-is_gsm)[0]
+        non_gsm_idxs = np.where(~is_gsm)[0]
 
         if len(gsm_idxs) == 0:
             raise RuntimeError('No GSM components; problem with module reloading?')
